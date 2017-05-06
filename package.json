@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "grunt": "^1.0.1",
+    "grunt-contrib-less": "^1.4.0",
+    "less": "^2.7.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "grunt test"
+  }
+}
