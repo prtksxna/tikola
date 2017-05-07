@@ -21,7 +21,6 @@
 		<div class="entry-meta">
 			<?php tikola_posted_on(); ?>
 			<?php the_post_thumbnail(); ?>
-		<h1>potty</h1>
 		</div><!-- .entry-meta -->
 		<?php
 		endif; ?>
