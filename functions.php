@@ -71,6 +71,13 @@ function tikola_setup() {
 endif;
 add_action( 'after_setup_theme', 'tikola_setup' );
 
+function my_home_category( $query ) {
+	if ( $query->is_home() && $query->is_main_query() ) {
+		$query->set( 'cat', '3');
+	}
+}
+add_action( 'pre_get_posts', 'my_home_category' );
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
