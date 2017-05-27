@@ -14,7 +14,7 @@ if ( is_single() ) : ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class('row'); ?> >
 	<div class="col-md-6">
 		<img
-			class="thumbnail-post"
+			class="post-grid-image"
 			alt="<?php the_title(); ?>"
 			src="<?php the_post_thumbnail_url(); ?>"
 		></a>
