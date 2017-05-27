@@ -23,6 +23,7 @@ if ( is_single() ) : ?>
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		<div class="entry-meta">
 			<?php tikola_posted_on(); ?>
+			<?php the_tags(); ?>
 		</div>
 		<?php
 			the_content( sprintf(
