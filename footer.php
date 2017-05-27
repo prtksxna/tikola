@@ -13,7 +13,7 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
+	<footer id="colophon" class="container site-footer" role="contentinfo">
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'tikola' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'tikola' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
