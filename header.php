@@ -26,7 +26,7 @@
 <div id="page" class="site">
 	<header id="masthead" class="site-header container" role="banner">
 		<div class="row">
-			<div class="site-branding col-md-6">
+			<div class="site-branding col-md-12">
 				<h1 class="site-title">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 						<?php if ( function_exists( 'the_custom_logo' ) ) {
@@ -40,7 +40,7 @@
 				</h1>
 			</div><!-- .site-branding -->
 
-			<nav id="site-navigation" class="main-navigation col-md-6" role="navigation">
+			<nav id="site-navigation" class="main-navigation col-md-12" role="navigation">
 				<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
 			</nav><!-- #site-navigation -->
 		</div>
