@@ -14,7 +14,7 @@ get_header(); ?>
 
 		<?php
 		while ( have_posts() ) : the_post();
-			if ( in_category( 'collection' ) ) {
+			if ( in_category( 'collections' ) ) {
 				get_template_part( 'template-parts/content-collection', get_post_format() );
 			} else {
 				get_template_part( 'template-parts/content', get_post_format() );

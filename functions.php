@@ -75,7 +75,7 @@ add_action( 'after_setup_theme', 'tikola_setup' );
 
 function my_home_category( $query ) {
 	if ( $query->is_home() && $query->is_main_query() ) {
-		$query->set( 'cat', '7');
+		$query->set( 'cat', '2'); # Create the first category as photos
 	}
 }
 add_action( 'pre_get_posts', 'my_home_category' );

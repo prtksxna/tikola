@@ -39,7 +39,6 @@ if ( is_single() ) : ?>
 	</div>
 </article><!-- #post-## -->
 <?php else: ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class('col-md-3'); ?>>
 	<div class="entry-meta">
 		<a
