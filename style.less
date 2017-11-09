@@ -3,7 +3,7 @@
 @grid-gutter-width: 5px;
 
 body {
-	font-family: 'ff-tisa-sans-web-pro', sans-serif;
+	font-family: 'Work Sans', sans-serif;
 }
 
 header {
@@ -43,10 +43,20 @@ a {
 	padding: 0;
 
 	li {
-		display: block;
-		margin: 20px;
+		display: inline;
+		text-transform: uppercase;
+		a {
+			margin: 20px;
+		}
 	}
 }
+
+#primary-menu li + li:before {
+        content: "/";
+	position: relative;
+        top: -2px;
+}
+
 
 .post-grid-image {
 		display: block;
