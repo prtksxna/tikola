@@ -18,11 +18,14 @@ if ( is_single() ) : ?>
 			<img src="<?php the_post_thumbnail_url(); ?>" class="img-responsive"/>
 		</a>
 		<div class="row">
-			<div class="entry-meta col-md-3">
-				<?php tikola_posted_on(); ?>
-			</div>
-			<div class="entry-content col-md-9">
+			<div class="entry-heading col-md-8 col-md-offset-4">
 				<h1><?php the_title(); ?></h1>
+			</div>
+			<div class="entry-meta col-md-4">
+				<p><?php tikola_posted_on(); ?></p>
+				<p><?php the_tags(); ?></p>
+			</div>
+			<div class="entry-content col-md-8">
 				<?php
 					the_content( sprintf(
 						/* translators: %s: Name of current post. */

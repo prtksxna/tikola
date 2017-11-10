@@ -12,20 +12,22 @@
 <?php
 if ( is_single() ) : ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class('row'); ?> >
-	<div class="col-md-6">
+	<div class="col-md-12">
 		<img
 			class="post-grid-image"
 			alt="<?php the_title(); ?>"
 			src="<?php the_post_thumbnail_url(); ?>"
 		></a>
 	</div>
-	<div class="entry-content col-md-6">
+	<div class="entry-heading col-md-8 col-md-offset-4">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-		<div class="entry-meta">
-			<?php tikola_posted_on(); ?>
-			<?php the_tags(); ?>
-		</div>
-		<?php
+	</div>
+	<div class="entry-meta col-md-4">
+		<p><?php tikola_posted_on(); ?></p>
+		<p><?php the_tags(); ?></p>
+	</div>
+	<div class="entry-content col-md-8">
+		<?Php
 			the_content( sprintf(
 				/* translators: %s: Name of current post. */
 				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'tikola' ), array( 'span' => array( 'class' => array() ) ) ),

@@ -1,5 +1,6 @@
 @import "node_modules/bootstrap/less/bootstrap.less";
 
+@container-large-desktop: (940px + @grid-gutter-width);
 @grid-gutter-width: 5px;
 
 body {
@@ -26,7 +27,7 @@ a {
 
 	.thumbnail-link {
 		display: block;
-		height: 282px; // MOB
+		height: 231px; // TODO: Fix this for breakpoints
 		width: 100%;
 		margin-bottom: 5px;
 		background-size: cover;
@@ -61,6 +62,20 @@ a {
 .post-grid-image {
 		display: block;
 		width: 100%;
+}
+
+.entry-heading {
+	margin-top: 50px;
+}
+
+.entry-meta {
+	font-size: 1em;
+	color: #aaa;
+
+	a {
+		font-size: 1em;
+		color: #aaa;
+	}
 }
 
 #colophon {
