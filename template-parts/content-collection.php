@@ -45,14 +45,24 @@ if ( is_single() ) : ?>
 
 <?php else: ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class('col-md-12'); ?>>
-	<div class="entry-meta">
+	<div class="entry">
 		<a
 			title="<?php the_title(); ?>"
 			href="<?php the_permalink();  ?>">
 			<img src="<?php the_post_thumbnail_url(); ?>" class="img-responsive"/>
 		</a>
-		<h1><?php the_title(); ?></h1>
-		<p><?php the_excerpt(); ?></p>
+		<div class="row">
+			<div class="entry-heading col-md-8 col-md-offset-4">
+				<h1><?php the_title(); ?></h1>
+			</div>
+			<div class="entry-meta col-md-4">
+				<p><?php tikola_posted_on(); ?></p>
+				<p><?php the_tags(); ?></p>
+			</div>
+			<div class="entry-content col-md-8">
+				<p><?php the_excerpt(); ?></p>
+			</div>
+		</div>
 	</div><!-- .entry-meta -->
 </article><!-- #post-## -->
 
