@@ -34,7 +34,7 @@ if ( is_single() ) : ?>
 		?>
 	</div>
 	</div>
-	<div class="col-md-7 col-md-offset-1">
+	<div class="col-md-8">
 		<img
 			class="post-grid-image"
 			alt="<?php the_title(); ?>"

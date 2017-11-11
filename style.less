@@ -1,10 +1,10 @@
 @import "node_modules/bootstrap/less/bootstrap.less";
 
 @container-large-desktop: (940px + @grid-gutter-width);
-@grid-gutter-width: 5px;
+@grid-gutter-width: 20px;
 
 body {
-	font-family: 'Work Sans', sans-serif;
+	font-family: supria-sans, sans-serif;
 }
 
 header {
@@ -28,9 +28,9 @@ a {
 
 	.thumbnail-link {
 		display: block;
-		height: 231px; // TODO: Fix this for breakpoints
+		height: 220px; // TODO: Fix this for breakpoints
 		width: 100%;
-		margin-bottom: 5px;
+		margin-bottom: 20px;
 		background-size: cover;
 		background-position: center center;
 	}
@@ -49,6 +49,7 @@ a {
 		text-transform: uppercase;
 		a {
 			margin: 20px;
+			font-weight: normal;
 		}
 	}
 }
@@ -72,6 +73,7 @@ a {
 .entry-meta {
 	font-size: 1em;
 	color: #aaa;
+	font-family: supria-sans-condensed, sans-serif;
 
 	a {
 		font-size: 1em;
