@@ -20,6 +20,7 @@ a {
 
 .custom-logo {
 	width: 500px;
+	max-width: 80%;
 }
 
 .category-photos {
@@ -80,4 +81,16 @@ a {
 
 #colophon {
 	min-height: 80px;
+}
+
+@media (max-width: @screen-sm-min) {
+.category-photos .thumbnail-link {
+		height: 46vw !important;
+}
+}
+
+@media (max-width: @screen-xs-min) {
+.category-photos .thumbnail-link {
+		height: 46vw !important;
+}
 }

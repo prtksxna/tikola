@@ -41,7 +41,7 @@ if ( is_single() ) : ?>
 	</div>
 </article><!-- #post-## -->
 <?php else: ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class('col-md-3'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('col-md-3 col-xs-6 col-sm-4'); ?>>
 	<div class="entry-meta">
 		<a
 			class="thumbnail-link"
