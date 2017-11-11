@@ -12,21 +12,15 @@
 <?php
 if ( is_single() ) : ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class('row'); ?> >
-	<div class="col-md-12">
-		<img
-			class="post-grid-image"
-			alt="<?php the_title(); ?>"
-			src="<?php the_post_thumbnail_url(); ?>"
-		></a>
-	</div>
-	<div class="entry-heading col-md-8 col-md-offset-4">
+	<div class="col-md-4" style="overflow:hidden;">
+	<div class="entry-h">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</div>
-	<div class="entry-meta col-md-4">
+	<div class="entry-meta">
 		<p><?php tikola_posted_on(); ?></p>
 		<p><?php the_tags(); ?></p>
 	</div>
-	<div class="entry-content col-md-8">
+	<div class="entry-content">
 		<?Php
 			the_content( sprintf(
 				/* translators: %s: Name of current post. */
@@ -38,6 +32,14 @@ if ( is_single() ) : ?>
 				'after'  => '</div>',
 			) );
 		?>
+	</div>
+	</div>
+	<div class="col-md-7 col-md-offset-1">
+		<img
+			class="post-grid-image"
+			alt="<?php the_title(); ?>"
+			src="<?php the_post_thumbnail_url(); ?>"
+		></a>
 	</div>
 </article><!-- #post-## -->
 <?php else: ?>
