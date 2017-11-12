@@ -1,7 +1,7 @@
 var $ = jQuery;
 
 $( function () {
-	var map = L.map( 'map' ).setView([51.505, -0.09], 13);
+	var map = L.map( 'map' ).setView([20.593, 78.962], 5);
 	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
 		maxZoom: 18,
 		id: 'mapbox.light',
@@ -28,5 +28,4 @@ $( function () {
 		}
 	} );
 	map.addLayer(markers);
-	map.fitBounds( markers.getBounds() );
 } );
