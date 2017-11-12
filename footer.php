@@ -13,9 +13,9 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="container site-footer" role="contentinfo">
-		<div class="site-info">
-
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info container
+			<?php dynamic_sidebar( 'sidebar-1' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
