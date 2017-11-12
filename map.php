@@ -24,7 +24,7 @@ get_header(); ?>
 <script>
 window.locations =
 		<?php
-			$the_query = new WP_Query( array( 'cat' => 2 ) );
+			$the_query = new WP_Query( array( 'cat' => 2, 'posts_per_page' => -1 ) );
 // The Loop
 if ( $the_query->have_posts() ) {
 	echo "[";
