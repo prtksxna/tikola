@@ -50,7 +50,7 @@ if ( is_single() ) : ?>
 		<a
 			class="thumbnail-link"
 			title="<?php the_title(); ?>"
-			style="background-image:url(<?php the_post_thumbnail_url( 'medium' ); ?>)"
+			style="background-image:url(<?php the_post_thumbnail_url( 'medium_large' ); ?>)"
 			href="<?php the_permalink();  ?>"
 		></a>
 	</div><!-- .entry-meta -->
