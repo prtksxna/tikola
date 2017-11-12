@@ -19,7 +19,7 @@ $( function () {
 				.prepend( $( '<img>' )
 					.attr( 'src', location.photo )
 					.attr( 'alt', location.title )
-					.attr( 'width', 100 )
+					.attr( 'width', 200 )
 				)
 			);
 

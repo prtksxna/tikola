@@ -35,7 +35,7 @@ if ( $the_query->have_posts() ) {
 		echo "\"latitude\":\"" . get_post_meta( get_the_id(), 'geo_latitude' )[0] . "\",";
 		echo "\"longitude\":\"" . get_post_meta( get_the_id(), 'geo_longitude' )[0] . "\",";
 		echo "\"url\":\"" . get_the_permalink() . "\",";
-		echo "\"photo\":\"" . get_the_post_thumbnail_url( null, 'thumbnail' )  . "\"";
+		echo "\"photo\":\"" . get_the_post_thumbnail_url( null, 'medium' )  . "\"";
 		echo "},";
 	}
 	echo "];";
