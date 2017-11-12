@@ -3,6 +3,10 @@
 @container-large-desktop: (940px + @grid-gutter-width);
 @grid-gutter-width: 20px;
 
+.screen-reader-text {
+	display: none;
+}
+
 html, body {
 	height: 100%;
 }
@@ -80,6 +84,14 @@ a {
 .post-grid-image {
 		display: block;
 		width: 100%;
+}
+
+.nav-links a {
+	color: #999;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
 }
 
 .tag_title {
