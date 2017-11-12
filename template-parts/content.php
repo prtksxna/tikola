@@ -33,7 +33,7 @@ if ( is_single() ) : ?>
 			?>
 		</div>
 		<div class="entry-meta">
-			<p><?php the_tags( '' ); ?></p>
+			<p class="tags"><?php the_tags( '' ); ?></p>
 		</div>
 	</div>
 	<div class="col-md-8">
