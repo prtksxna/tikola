@@ -40,7 +40,9 @@ get_header(); ?>
 
 			endwhile;
 
-			the_posts_navigation();
+			echo '<div class="col-md-12">';
+			the_posts_navigation( [ 'prev_text' => 'Older posts →', 'next_text' => '← Newer posts'] );
+			echo '</div>';
 
 		else :
 
