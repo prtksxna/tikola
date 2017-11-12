@@ -126,6 +126,7 @@ function tikola_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'tikola_scripts' );
 
+
 /**
  * Implement the Custom Header feature.
  */

@@ -16,7 +16,6 @@ $( function () {
 
 			$popup.append( $( '<a>' )
 				.attr( 'href', location.url )
-				.text( location.title )
 				.prepend( $( '<img>' )
 					.attr( 'src', location.photo )
 					.attr( 'alt', location.title )
