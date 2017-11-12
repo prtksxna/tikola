@@ -53,7 +53,9 @@ if ( is_single() ) : ?>
 		</a>
 		<div class="row">
 			<div class="entry-heading col-md-8 col-md-offset-4">
-				<h1><?php the_title(); ?></h1>
+				<a title="<?php the_title(); ?>" href="<?php the_permalink();  ?>">
+					<h1><?php the_title(); ?></h1>
+				</a>
 			</div>
 			<div class="entry-meta col-md-4">
 				<p><?php tikola_posted_on(); ?></p>
