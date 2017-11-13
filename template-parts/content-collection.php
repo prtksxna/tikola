@@ -44,7 +44,7 @@ if ( is_single() ) : ?>
 </article><!-- #post-## -->
 
 <?php else: ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class('col-md-12'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('col-md-12 story-snip'); ?>>
 	<div class="entry">
 		<a
 			title="<?php the_title(); ?>"
