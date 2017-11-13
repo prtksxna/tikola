@@ -62,7 +62,7 @@ if ( is_single() ) : ?>
 				<p><?php the_tags(); ?></p>
 			</div>
 			<div class="entry-content col-md-8">
-				<p><?php the_excerpt(); ?></p>
+				<?php the_excerpt(); ?>
 			</div>
 		</div>
 	</div><!-- .entry-meta -->
