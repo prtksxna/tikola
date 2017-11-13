@@ -1,6 +1,14 @@
 var $ = jQuery;
 
 $( function () {
+	// position and sizing of map
+	$( '#colophon' ).css( 'margin-top', 0 );
+	var viewportHeight = $( window ).height();
+	var mastheadHeight = $( '#masthead' ).height();
+	var magicMargin = 220;
+	$( '#map' ).css( 'height', viewportHeight - ( mastheadHeight + magicMargin ) );
+
+	// map stuff
 	var map = L.map( 'map' ).setView([20.593, 78.962], 5);
 	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
 		maxZoom: 18,
