@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('col-md-10 col-md-offset-1'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('col-md-8 col-md-offset-2'); ?>>
 
 	<div class="entry">
 		<div class="entry-heading">
