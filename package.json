@@ -9,6 +9,7 @@
     "grunt-contrib-watch": "^1.0.0"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "build": "grunt build"
   }
 }
