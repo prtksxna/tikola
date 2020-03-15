@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^3.4.1",
     "grunt": "^1.0.1",
     "grunt-contrib-less": "^1.4.0",
     "less": "^2.7.1"
