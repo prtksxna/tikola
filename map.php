@@ -29,14 +29,20 @@ window.locations =
 if ( $the_query->have_posts() ) {
 	echo "[";
 	while ( $the_query->have_posts() ) {
-		echo "{";
 		$the_query->the_post();
-		echo "\"title\":\"" . get_the_title() . "\",";
-		echo "\"latitude\":\"" . get_post_meta( get_the_id(), 'geo_latitude' )[0] . "\",";
-		echo "\"longitude\":\"" . get_post_meta( get_the_id(), 'geo_longitude' )[0] . "\",";
-		echo "\"url\":\"" . get_the_permalink() . "\",";
-		echo "\"photo\":\"" . get_the_post_thumbnail_url( null, 'medium' )  . "\"";
-		echo "},";
+		if (
+			// We have the location
+			empty(get_post_meta( get_the_id(), 'geo_latitude' )) == false &&
+			empty(get_post_meta( get_the_id(), 'geo_longitude' )) == false
+		) {
+			echo "{";
+			echo "\"title\":\"" . get_the_title() . "\",";
+			echo "\"latitude\":\"" . get_post_meta( get_the_id(), 'geo_latitude' )[0] . "\",";
+			echo "\"longitude\":\"" . get_post_meta( get_the_id(), 'geo_longitude' )[0] . "\",";
+			echo "\"url\":\"" . get_the_permalink() . "\",";
+			echo "\"photo\":\"" . get_the_post_thumbnail_url( null, 'medium' )  . "\"";
+			echo "},";
+		}
 	}
 	echo "];";
 	/* Restore original Post Data */
